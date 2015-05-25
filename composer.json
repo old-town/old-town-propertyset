@@ -1,0 +1,20 @@
+{
+    "name": "old-town/propertyset",
+    "description": "PropertySet is a persistence-agnostic module that can be used to fulfill storage requirements in applications that can change constantly",
+    "type": "library",
+    "license": "BSD-3-Clause",
+    "keywords": [
+        "storage",
+        "zend",
+        "module"
+    ],
+    "homepage": "https://github.com/old-town/old-town-propertyset",
+    "support": {
+        "email": "and-rey2@yandex.ru"
+    },
+    "autoload": {
+        "psr-4": {
+            "OldTown\\PropertySet\\": "src/"
+        }
+    }
+}
