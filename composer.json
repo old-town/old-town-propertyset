@@ -3,6 +3,7 @@
     "description": "PropertySet is a persistence-agnostic module that can be used to fulfill storage requirements in applications that can change constantly",
     "type": "library",
     "license": "BSD-3-Clause",
+    "minimum-stability": "dev",
     "keywords": [
         "storage",
         "zend",
