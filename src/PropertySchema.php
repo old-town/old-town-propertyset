@@ -47,7 +47,7 @@ class PropertySchema
     /**
      * @return string
      */
-    public function getName()
+    public function getPropertyName()
     {
         return $this->name;
     }
@@ -57,7 +57,7 @@ class PropertySchema
      *
      * @return $this
      */
-    public function setName($name)
+    public function setPropertyName($name)
     {
         $this->name = (string)$name;
 
