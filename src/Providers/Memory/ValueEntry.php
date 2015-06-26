@@ -12,7 +12,6 @@ namespace OldTown\PropertySet\Providers\Memory;
  */
 class ValueEntry
 {
-
     /**
      * @var mixed
      */
@@ -36,7 +35,6 @@ class ValueEntry
         if (null !== $type) {
             $this->setType($type);
         }
-
     }
 
     /**
@@ -78,7 +76,4 @@ class ValueEntry
 
         return $this;
     }
-
-
-
 }

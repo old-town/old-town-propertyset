@@ -157,7 +157,7 @@ class MemoryPropertySet extends AbstractPropertySet
                 throw new Exception\DuplicatePropertyKeyException($errMsg);
             }
 
-            $value = $v->getValue();;
+            $value = $v->getValue();
             return $value;
         }
         return null;

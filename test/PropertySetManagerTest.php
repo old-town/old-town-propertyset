@@ -26,6 +26,5 @@ class PropertySetManagerTest extends TestCase
         $pr = PropertySetManager::getInstance('memory', []);
 
         static::assertInstanceOf(MemoryPropertySet::class, $pr);
-
     }
 }

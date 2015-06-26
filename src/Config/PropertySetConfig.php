@@ -4,6 +4,7 @@
  * @author  Malofeykin Andrey  <and-rey2@yandex.ru>
  */
 namespace OldTown\PropertySet\Config;
+
 use OldTown\PropertySet\Exception\InvalidArgumentException;
 
 /**
@@ -95,9 +96,8 @@ class PropertySetConfig
             $this->propertySets[$name] = (string)$data['class'];
 
 
-            $flagHasArgs = array_key_exists('args',$data) && is_array($data['args']);
+            $flagHasArgs = array_key_exists('args', $data) && is_array($data['args']);
             $this->propertySetArgs[$name] = $flagHasArgs  ? $data['args'] : [];
-
         }
 
 

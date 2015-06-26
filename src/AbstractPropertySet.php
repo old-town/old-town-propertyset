@@ -68,12 +68,11 @@ abstract class AbstractPropertySet implements PropertySetInterface
                 $type = $this->getType($key);
                 if ($type > 0) {
                     $value = $this->get($type, $key);
-                    $data .= sprintf("\t %s = %s \n", $key,  $value);
+                    $data .= sprintf("\t %s = %s \n", $key, $value);
                 }
             }
             $result = sprintf("%s {\n%s}\n", static::class, $data);
         } catch (Exception\PropertyException $e) {
-
         }
 
         return $result;
@@ -616,7 +615,6 @@ abstract class AbstractPropertySet implements PropertySetInterface
      */
     protected function setImpl($type, $key, $value)
     {
-
     }
 
 
@@ -636,7 +634,6 @@ abstract class AbstractPropertySet implements PropertySetInterface
             __METHOD__
         );
         trigger_error($errMsg, E_USER_ERROR);
-
     }
 
     /**
@@ -742,6 +739,4 @@ abstract class AbstractPropertySet implements PropertySetInterface
 
         return 0;
     }
-
 }
-

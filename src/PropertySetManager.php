@@ -4,6 +4,7 @@
  * @author  Malofeykin Andrey  <and-rey2@yandex.ru>
  */
 namespace OldTown\PropertySet;
+
 use OldTown\PropertySet\Config\PropertySetConfig;
 use OldTown\PropertySet\Exception\RuntimeException;
 use ReflectionClass;
@@ -56,6 +57,5 @@ class PropertySetManager
             );
             throw new RuntimeException($errMsg);
         }
-
     }
 }
