@@ -4,6 +4,7 @@
  * @author  Malofeykin Andrey  <and-rey2@yandex.ru>
  */
 namespace OldTown\PropertySet\Verifiers;
+
 use OldTown\PropertySet\Verifiers\Exception\VerifyException;
 
 /**

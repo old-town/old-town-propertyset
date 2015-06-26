@@ -12,5 +12,4 @@ namespace OldTown\PropertySet\Providers\Memory;
  */
 class MemoryPropertySet
 {
-
 }

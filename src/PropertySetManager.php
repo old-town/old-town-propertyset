@@ -12,7 +12,6 @@ namespace OldTown\PropertySet;
  */
 class PropertySetManager
 {
-
     /**
      * @param       $name
      * @param array $args
@@ -21,6 +20,5 @@ class PropertySetManager
      */
     public static function getInstance($name, array $args = [])
     {
-
     }
 }

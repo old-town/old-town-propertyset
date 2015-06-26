@@ -4,6 +4,7 @@
  * @author  Malofeykin Andrey  <and-rey2@yandex.ru>
  */
 namespace OldTown\PropertySet\Verifiers\Exception;
+
 use OldTown\PropertySet\Exception\RuntimeException;
 
 /**
@@ -13,5 +14,4 @@ use OldTown\PropertySet\Exception\RuntimeException;
  */
 class VerifyException extends RuntimeException
 {
-
 }

@@ -12,5 +12,4 @@ namespace OldTown\PropertySet\Config;
  */
 class PropertySetConfig
 {
-
 }

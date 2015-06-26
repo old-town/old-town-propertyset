@@ -15,7 +15,6 @@ use OldTown\PropertySet\PropertySetManager;
  */
 class PropertySetManagerTest extends TestCase
 {
-
     /**
      * Проверка того что загружается PropertySetManager
      *
@@ -24,6 +23,6 @@ class PropertySetManagerTest extends TestCase
     public function testCreatePropertySetManage()
     {
         $manager = new PropertySetManager();
-        static::assertInstanceOf(PropertySetManager::class,$manager);
+        static::assertInstanceOf(PropertySetManager::class, $manager);
     }
 }
