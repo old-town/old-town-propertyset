@@ -26,16 +26,14 @@ class PropertySetSchema
      *
      * @param string $key
      *
-     * @return PropertySchema[]
+     * @return PropertySchema|null
      *
-     * @throws \OldTown\PropertySet\Exception\PropertyException
      */
     public function getPropertySchema($key)
     {
         $key = (string)$key;
         if (!array_key_exists($key, $this->propertySchemas)) {
-            $errMsg = sprintf('Не найдена схема по ключу %s', $key);
-            throw new Exception\PropertyException($errMsg);
+            return null;
         }
 
         return $this->propertySchemas[$key];

@@ -7,6 +7,7 @@ namespace OldTown\PropertySet\Test;
 
 use PHPUnit_Framework_TestCase as TestCase;
 use OldTown\PropertySet\PropertySetManager;
+use OldTown\PropertySet\Providers\Memory\MemoryPropertySet;
 
 /**
  * Class PropertySetManagerTest
@@ -16,13 +17,15 @@ use OldTown\PropertySet\PropertySetManager;
 class PropertySetManagerTest extends TestCase
 {
     /**
-     * Проверка того что загружается PropertySetManager
+     * Создание PropertySet
      *
      * @return void
      */
-    public function testCreatePropertySetManage()
+    public function testCreatePropertySetMemory()
     {
-        $manager = new PropertySetManager();
-        static::assertInstanceOf(PropertySetManager::class, $manager);
+        $pr = PropertySetManager::getInstance('memory', []);
+
+        static::assertInstanceOf(MemoryPropertySet::class, $pr);
+
     }
 }

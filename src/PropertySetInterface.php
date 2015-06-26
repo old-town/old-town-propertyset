@@ -7,6 +7,8 @@ namespace OldTown\PropertySet;
 
 use DateTime;
 use DOMDocument;
+use Traversable;
+
 
 /**
  * Interface PropertySetInterface
@@ -33,7 +35,7 @@ interface PropertySetInterface
     /**
      * Дата - объект инкапсулированный от \DateTime
      *
-     * @var \DateTime
+     * @var integer
      */
     const DATE = 7;
 
@@ -43,6 +45,13 @@ interface PropertySetInterface
      * @var integer
      */
     const INT = 2;
+
+    /**
+     * Целочисловое значение
+     *
+     * @var integer
+     */
+    const FLOAT = 4;
 
     /**
      * Объект
@@ -92,7 +101,7 @@ interface PropertySetInterface
 
     /**
      * @param string $key
-     * @param object $value
+     * @param mixed $value
      *
      * @return $this
      *
@@ -103,7 +112,7 @@ interface PropertySetInterface
     /**
      * @param string $key
      *
-     * @return object
+     * @return mixed
      *
      * @throws Exception\PropertyException
      */
@@ -174,14 +183,14 @@ interface PropertySetInterface
      *
      * @throws Exception\PropertyException
      */
-    public function setDouble($key, $value);
+    public function setFloat($key, $value);
 
     /**
      * @param string $key
      *
      * @return float
      */
-    public function getDouble($key);
+    public function getFloat($key);
 
     /**
      * @param string  $key
@@ -209,33 +218,15 @@ interface PropertySetInterface
      */
 
     /**
-     * @param string  $prefix
-     * @param integer $type
+     * @param string|null  $prefix
+     * @param integer|null $type
      *
      * @return array
      *
      * @throws Exception\PropertyException
      */
-    public function getKeys($prefix, $type);
+    public function getKeys($prefix = null, $type = null);
 
-    /**
-     * @param string  $key
-     * @param integer $value
-     *
-     * @return $this
-     *
-     * @throws Exception\PropertyException
-     */
-    public function setLong($key, $value);
-
-    /**
-     * @param string $key
-     *
-     * @return integer
-     *
-     * @throws Exception\PropertyException
-     */
-    public function getLong($key);
 
     /**
      * @param string $key
@@ -258,13 +249,13 @@ interface PropertySetInterface
 
     /**
      * @param string $key
-     * @param [] $value
+     * @param array|Traversable $value
      *
      * @return $this
      *
      * @throws Exception\PropertyException
      */
-    public function setProperties($key, array  $value = []);
+    public function setArray($key, $value);
 
     /**
      * @param string $key
@@ -273,7 +264,7 @@ interface PropertySetInterface
      *
      * @throws Exception\PropertyException
      */
-    public function getProperties($key);
+    public function getArray($key);
 
     /**
      * @param string $property
@@ -300,26 +291,6 @@ interface PropertySetInterface
      * @throws Exception\PropertyException
      */
     public function getString($key);
-
-    /**
-     * @param string $key
-     * @param string $value
-     *
-     * @return $this
-     *
-     * @throws Exception\PropertyException
-     */
-    public function setText($key, $value);
-
-    /**
-     * @param string $key
-     *
-     * @return string
-     *
-     * @throws Exception\PropertyException
-     */
-    public function getText($key);
-
 
     /**
      * @param string $key
