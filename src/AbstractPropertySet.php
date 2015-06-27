@@ -162,10 +162,6 @@ abstract class AbstractPropertySet implements PropertySetInterface
                 $value = $this->getArray($key);
                 break;
             }
-            default: {
-                $errMsg = 'Неизвестный тип';
-                throw new Exception\PropertyException($errMsg);
-            }
         }
 
         return $value;
