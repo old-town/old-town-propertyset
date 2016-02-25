@@ -1,7 +1,7 @@
 docs_dir: doc/book/ru
 pages:
     - index.md
-site_name: workflow-zf2-toolkit
+site_name: workflow-propertyset
 site_description: 'Сохранение данных приложения'
 repo_url: 'https://github.com/old-town/old-town-propertyset'
 copyright: 'Copyright (c) 2016 <a href="https://github.com/old-town/">OldTown</a>'
