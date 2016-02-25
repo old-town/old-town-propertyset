@@ -20,7 +20,8 @@
   },
   "require-dev": {
     "fabpot/php-cs-fixer": "*@dev",
-    "phpunit/phpunit": "*@dev",
+    "phpunit/phpunit": "~4.8",
+    "phpunit/phpcov": "~2",
     "zendframework/zend-loader": "*",
     "satooshi/php-coveralls": "dev-master"
   },
