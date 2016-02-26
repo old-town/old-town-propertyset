@@ -17,6 +17,6 @@ Develop:
 
 Обсуждение проблем https://github.com/old-town/old-town-propertyset/issues
 
-= Документация =
+# Документация
 - [Online documentation](http://old-town-propertyset.readthedocs.org/ru/dev/)
 - [Documentation source files](doc/book/ru/)
