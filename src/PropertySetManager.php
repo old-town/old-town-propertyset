@@ -20,7 +20,7 @@ class PropertySetManager
      * @param       $name
      * @param array $args
      *
-     * @return PropertySetInterface
+     * @return PropertySetInterface|null
      *
      * @throws \OldTown\PropertySet\Exception\RuntimeException
      */
